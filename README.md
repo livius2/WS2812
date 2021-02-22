@@ -65,3 +65,15 @@ while True:
     ws2812.show(blank)
     sleep(1)
 ```
+
+## Example of immutable version
+
+ws2812 = ws2812.WS2812_immutable(24, "P11")
+
+while True:
+    ws2812.show(data)
+    sleep(1)
+    ws2812.show(blank)
+    sleep(1)
+```
+
