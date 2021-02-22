@@ -68,6 +68,7 @@ while True:
 
 ## Example of immutable version
 
+```
 ws2812 = ws2812.WS2812_immutable(24, "P11")
 
 while True:
