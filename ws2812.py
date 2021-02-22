@@ -23,9 +23,9 @@ class WS2812_immutable:
     def __init__(self, pixel_count, pin, channel=3):
         from machine import RMT
         self.rmt = RMT(channel=channel, gpio=pin, tx_idle_level=0)
-		self.pixel_count = pixel_count
-		self.duration = bytearray(pixel_count * 24 * 2)
-		self.pulse_data = (1, 0) * (pixel_count * 24)
+        self.pixel_count = pixel_count
+        self.duration = bytearray(pixel_count * 24 * 2)
+        self.pulse_data = (1, 0) * (pixel_count * 24)
 
     def show(self, data):
         from time import sleep_us
